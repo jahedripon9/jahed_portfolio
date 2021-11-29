@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
-import { Divider } from '@mui/material';
+import { Button, Divider, Link } from '@mui/material';
 import Biography from '../Biography/Biography';
 import PORTFOLIO from '../PORTFOLIO/PORTFOLIO';
 import CONTACT from '../CONTACT/CONTACT';
@@ -35,6 +35,7 @@ const Home = () => {
           <Typography variant="p" color="text.secondary" component="div" sx={{marginTop:"20px"}}>
           A Front End Developer, or Front End Web Developer, <br /> is responsible for using their knowledge of <br /> programming languages to code user-side applications, <br /> including visual elements like menu bars, clickable buttons, <br /> and the overall layout of websites or web applications.
           </Typography>
+          <Link  href="https://drive.google.com/file/d/1rkYh3Za5T6OWjIrWwKqMBEjc22sRJNlO/view?usp=sharing" target="_blank"><Button variant="contained" size="large" sx={{p:'10px'}}>CV Download</Button></Link>
         </CardContent>
     </Card>
     <Biography></Biography>

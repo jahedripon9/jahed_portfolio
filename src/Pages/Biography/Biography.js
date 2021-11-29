@@ -4,7 +4,7 @@ import { styled } from '@mui/material/styles';
 import { Box } from '@mui/system';
 import Divider from '@mui/material/Divider';
 import React from 'react';
-import { Button, Container } from '@mui/material';
+import { Button, Container, Link } from '@mui/material';
 import TabsList from '../TabsList/TabsList';
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -65,7 +65,7 @@ const Biography = () => {
                 
             </div>
             <div > <br /><br /><br /><br /><br />
-            <Button variant="contained" size="large" sx={{p:'25px'}}>CV Download</Button>
+            <Link href="https://drive.google.com/file/d/1rkYh3Za5T6OWjIrWwKqMBEjc22sRJNlO/view?usp=sharing" target="_blank"><Button variant="contained" size="large" sx={{p:'25px'}}>CV Download</Button></Link>
 
             <TabsList></TabsList>
             </div>
