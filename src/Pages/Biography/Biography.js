@@ -4,7 +4,7 @@ import { styled } from '@mui/material/styles';
 import { Box } from '@mui/system';
 import Divider from '@mui/material/Divider';
 import React from 'react';
-import { Button, Container, Link } from '@mui/material';
+import { Button, Container, Link, Typography } from '@mui/material';
 import TabsList from '../TabsList/TabsList';
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -19,10 +19,27 @@ const Item = styled(Paper)(({ theme }) => ({
 const Biography = () => {
     return (
         <Container fixed>
-        <Box>
-            <h1> BIOGRAPHY</h1>
+        <Box sx={{marginTop:'30px'}}>
+            <Typography
+                sm={12}
+               sx={{ display: 'inline' }}
+               component="div"
+               variant="h3"
+               color="text.primary"
+             >
+                 BIOGRAPHY
+            </Typography> 
             <hr />
-            <p>I'm a Freelancer Front-end Developer with over 2 years of experience. I'm from Sylhet, Bangladesh. I code and create web elements for amazing people around the world. I like work with new people. New people are new experiences.</p>
+            <Typography
+                sm={12}
+               sx={{ display: 'inline' }}
+               component="div"
+               variant="h6"
+               color="text.primary"
+             >
+                  I'm a Freelancer Front-end Developer with over 2 years of experience. I'm from Sylhet, Bangladesh. I code and create web elements for amazing people around the world. I like work with new people. New people are new experiences.
+            </Typography> 
+           
             <div>
                 <Stack
                     direction={{ xs: 'column', sm: 'row' }}
@@ -31,6 +48,7 @@ const Biography = () => {
                     divider={<Divider orientation="vertical" flexItem />}
                     justifyContent="center"
                     alignItems="center"
+                    marginY='30px'
                     // spacing={2}
                     >
                     <Item>Name: Jahed Ahmed Ripon</Item> 
@@ -43,6 +61,7 @@ const Biography = () => {
                     divider={<Divider orientation="vertical" flexItem />}
                     justifyContent="center"
                     alignItems="center"
+                    marginY='30px'
                     // spacing={2}
                     >
                     <Item>Age: 27 Years</Item> 
@@ -56,6 +75,7 @@ const Biography = () => {
                     divider={<Divider orientation="vertical" flexItem />}
                     justifyContent="center"
                     alignItems="center"
+                    marginY='30px'
                     // spacing={2}
                     >
                      <Item>Skype: jahed_R9</Item>
@@ -64,7 +84,7 @@ const Biography = () => {
                 </Stack>
                 
             </div>
-            <div > <br /><br /><br /><br /><br />
+            <div > <br /><br />
             <Link href="https://drive.google.com/file/d/1rkYh3Za5T6OWjIrWwKqMBEjc22sRJNlO/view?usp=sharing" target="_blank"><Button variant="contained" size="large" sx={{p:'25px'}}>CV Download</Button></Link>
 
             <TabsList></TabsList>

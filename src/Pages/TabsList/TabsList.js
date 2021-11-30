@@ -19,7 +19,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          <Typography >{children}</Typography>
         </Box>
       )}
     </div>
@@ -47,11 +47,11 @@ const TabsList = () => {
   };
 
   return (
-    <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+    <Box sx={{ width: '100%', backgroundColor:'#dff9fb', marginY:'20px'}}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider'}}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Education" {...a11yProps(0)} />
-          <Tab label="Skills" {...a11yProps(1)} />
+          <Tab sx={{ fontSize:"25px" , mx:'auto' }} label="Education" {...a11yProps(0)} />
+          <Tab sx={{ fontSize:"25px" , mx:'auto' }} label="Skills" {...a11yProps(1)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>

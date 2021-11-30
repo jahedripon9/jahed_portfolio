@@ -1,36 +1,13 @@
-import * as React from 'react';
-import { useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import SkipNextIcon from '@mui/icons-material/SkipNext';
-import { Button, Container, Divider, Link } from '@mui/material';
-import Biography from '../Biography/Biography';
-import PORTFOLIO from '../PORTFOLIO/PORTFOLIO';
-import CONTACT from '../CONTACT/CONTACT';
+import { Button, CardContent, Container, Divider, Link, Typography } from '@mui/material';
+import { Box } from '@mui/system';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-const Home = () => {
-  
+import React from 'react';
 
-  return (
-    <Container fulid >
-    <Card sx={{ display: 'flex', mx:'20px', width:'full'  }}>
-      <Box sm={12} sx={{ display: 'flex', flexDirection: 'column' }}>
-      <CardMedia
-        component="img"
-        sx={{ width: 350}}
-        image="https://i.ibb.co/z5zRL93/IMG-0765.jpg"
-        alt="Live from space album cover"
-      />
-       </Box>
-       
-        <CardContent sm={12} sx={{ flex: '1 0 auto' }}>
+const About = () => {
+    return (
+        <Container>
+            <CardContent sm={12} sx={{ flex: '1 0 auto' }}>
         <Box sm={12} >
           <Typography sm={12} component="div" variant="h2" sx={{marginBottom:"20px"}}>
           Hi ! <br /> I’m Jahed Ahmed <br /> Ripon.
@@ -45,13 +22,8 @@ const Home = () => {
           <Link  href="https://drive.google.com/file/d/1rkYh3Za5T6OWjIrWwKqMBEjc22sRJNlO/view?usp=sharing" target="_blank"><Button variant="contained" size="large" sx={{p:'10px'}}>CV Download</Button></Link>
           </Box>
         </CardContent>
-        
-    </Card>
-    <Biography></Biography>
-    <PORTFOLIO></PORTFOLIO>
-    <CONTACT></CONTACT>
-    </Container>
-  );
+        </Container>
+    );
 };
 
-export default Home;
+export default About;

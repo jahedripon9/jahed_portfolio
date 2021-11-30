@@ -23,7 +23,6 @@ const Skills = () => {
                   >
                     HTML5, CSS3, Bootstrap, Tailwind, Material Ui, JavaScript, React JS.
                   </Typography>
-                  {/* {" Department: Computer Technology, Semester: 6th, Session: 2018-2019, Study running."} */}
                 </React.Fragment>
               }
             />
@@ -42,7 +41,6 @@ const Skills = () => {
                   >
                     MongoDB, Node JS
                   </Typography>
-                  {/* {" Department: Computer Technology, Semester: 6th, Session: 2018-2019, Study running."} */}
                 </React.Fragment>
               }
             />
@@ -61,7 +59,6 @@ const Skills = () => {
                   >
                     Firebase
                   </Typography>
-                  {/* {" Department: Computer Technology, Semester: 6th, Session: 2018-2019, Study running."} */}
                 </React.Fragment>
               }
             />
@@ -80,7 +77,25 @@ const Skills = () => {
                   >
                     Git, Chrome Dev Tool, VS Code 
                   </Typography>
-                  {/* {" Department: Computer Technology, Semester: 6th, Session: 2018-2019, Study running."} */}
+                </React.Fragment>
+              }
+            />
+          </ListItem>
+          <ListItem alignItems="flex-start">
+            
+            <ListItemText
+              primary="Certification "
+              secondary={
+                <React.Fragment>
+                  <Typography
+                    sx={{ display: 'inline' }}
+                    component="span"
+                    variant="body2"
+                    color="text.primary"
+                  >
+                    Web Design & Development (Laravel)" 
+                  </Typography>
+                  {"	Successfully Completed the course on Web Design & Development (Laravel) Conducted by Datacraft Ltd and supported by Bangladesh Hi-Tech Park Authority."}
                 </React.Fragment>
               }
             />

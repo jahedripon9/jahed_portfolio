@@ -31,6 +31,27 @@ const Education = () => {
               }
             />
           </ListItem>
+          <ListItem alignItems="flex-start">
+            <ListItemAvatar>
+              <Avatar alt="APTIS" src="https://upload.wikimedia.org/wikipedia/commons/e/e3/BritishCouncil_Logo.png" />
+            </ListItemAvatar>
+            <ListItemText
+              primary=" Language Proficiency "
+              secondary={
+                <React.Fragment>
+                  <Typography
+                    sx={{ display: 'inline' }}
+                    component="span"
+                    variant="body2"
+                    color="text.primary"
+                  >
+                    British Council
+                  </Typography>
+                  {"	English:  APTIS, Forward-thinking English testing exam passed, supported by British Council."}
+                </React.Fragment>
+              }
+            />
+          </ListItem>
         </List>
       );
     }
