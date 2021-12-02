@@ -1,7 +1,7 @@
 import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import { Container, Typography } from '@mui/material';
+import { Button, Container, Link, Typography } from '@mui/material';
 import DJI from '../DJI/DJI';
 import Food from '../Food/Food';
 function srcset(image, size, rows = 1, cols = 1) {
@@ -41,6 +41,16 @@ const IBNSINA = () => {
       ))}
     </ImageList>
 
+    <Typography
+        sm={12}
+               sx={{ display: 'inline', marginBottom:'20px' }}
+               component="div"
+               variant="p"
+               color="text.primary"
+             >
+               <Button variant='contained' ><Link href=' https://ibn-sina-hospital-limited.web.app/' style={{color:'white'}}target='_blank'>Live Server Link</Link></Button>
+               <Button variant='contained' ><Link href=' https://github.com/jahedripon9/Ibn-Sina-Hospital-Ltd' style={{color:'white'}} target='_blank'>Github Code Link</Link></Button> <br />
+             </Typography> 
     <Typography
         sm={12}
                sx={{ display: 'inline', marginBottom:'20px' }}

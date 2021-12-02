@@ -1,7 +1,7 @@
 import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import { Container, Typography } from '@mui/material';
+import { Button, Container, Link, Typography } from '@mui/material';
 function srcset(image, size, rows = 1, cols = 1) {
     return {
       src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
@@ -45,8 +45,11 @@ const DJI = () => {
                variant="p"
                color="text.primary"
              >
+               <Button variant='contained' ><Link href=' https://dji-official-website.web.app/' style={{color:'white'}}target='_blank'>Live Server Link</Link></Button>
+               <Button variant='contained' ><Link href=' https://github.com/jahedripon9/DJI_Official_Client_Site' style={{color:'white'}}target='_blank'>Github Client Site Link</Link></Button>
+               <Button variant='contained' ><Link href=' https://github.com/jahedripon9/DJI_Official_Server_Site' style={{color:'white'}} target='_blank'>Github Server Site Link</Link></Button> <br />
                The Future of Possible
-Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.
+                Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.
              </Typography> 
     </Container>
   );
